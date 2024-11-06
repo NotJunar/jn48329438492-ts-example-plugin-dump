@@ -475,14 +475,14 @@ passwords:
   bruteforce:
     # Sets the maximum number of incorrect attempts a player can make.
     # - When using the value "1" the player will be disconnected immediately when he makes a mistake.
-    max-login-tries: 1
+    max-login-tries: 2
 
     # Defines whether brute-force attacks will be punished automatically.
     # - After too many incorrect attempts, the suspect IP address will be blocked.
     auto-punish: true
 
     # Sets the punishment time for a suspected brute force attack (in minutes).
-    punishment-duration: 15
+    punishment-duration: 17
 
   hashing:
     # Defines the hashing algorithm used.
@@ -500,7 +500,7 @@ passwords:
     #  |=> ARGON2I
     #  |=> ARGON2D
     #
-    algorithm: "BCRYPT2A"
+    algorithm: "PBKDF2"
 
     bcrypt:
       rounds: 10
